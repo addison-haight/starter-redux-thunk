@@ -19,7 +19,7 @@ export default function Quote() {
   // Add useEffect() here
   useEffect(() => {
     async function loadQuote() {
-      await dispatchEvent(fetchQuote());
+      await dispatch(fetchQuote());
     }
     loadQuote();
   }, [dispatch]);
